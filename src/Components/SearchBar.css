@@ -1,0 +1,59 @@
+input {
+    border: none;
+    border-color: transparent;
+    margin: 6px;
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translate(0, -75%);
+}
+
+label, input {
+  background-color: transparent !important;
+}
+
+.searchBarContainer {
+    width:200px;
+    height: 20px;
+    position:relative;
+    
+}
+
+.inputContainer {
+  margin: 32px 16px;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.searchMenu {
+    width: 100%;
+    min-height: 12px;
+  }
+
+  
+
+  select {
+    border: none;
+    border-color: transparent;
+    max-width: 110px;
+  }
+
+  .searchMenuSection {
+    display: inline-block;
+    height: 100px;
+    vertical-align: top;
+  }
+
+  .leftSection {
+    width: calc(100% - 410px);
+    min-width: 250px;
+  }
+
+  .rightSection {
+    width: 400px;
+  }
+
+  label {
+    padding: 5px;
+  }

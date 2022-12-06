@@ -1,0 +1,32 @@
+.CountryCard {
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    transition: transform 200ms;
+    margin: 64px;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .CountryCard:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .CountryCardFlag {
+    width: 100%;
+  }
+  
+  .CountryCardSummary {
+    width: 90%;
+  
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+  
+  .CountryCardSummary p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }

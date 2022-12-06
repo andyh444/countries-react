@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body {
+  font-family: Nunito Sans;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.parentDiv {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: max-content;
+}
+
+.lightBack {
+  background-color: rgb(250, 250, 250);
+}
+
+.darkBack {
+  background-color: rgb(32, 45, 54);
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+
+.lightElement {
+  background-color: white;
+  color: black;
+}
+
+.darkElement {
+  background-color: rgb(43, 55, 67);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header h2 {
+  margin: 0;
+  padding: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
+}
+
+.DarkModeButton {
+  cursor: pointer;
+  position: absolute;
+  height: 28px;
+  width: 128px;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.searchIcon {
+  width: 16px;
+  opacity: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.darkModeText {
+  display: inline-block;
+  position: absolute;
+  left: 28px;
+  top: 50%;
+  transform: translate(0, -50%);
 }

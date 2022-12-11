@@ -2,10 +2,12 @@ import './App.css';
 import React, { useState } from 'react';
 import CountryCards from './Components/CountryCards';
 import SearchBar from './Components/SearchBar';
+import CountryDetail from './Components/CountryDetail';
 
 function App() {
-  const [countryInfo, updateCountries] = useState([]);
+  const [countries, updateCountries] = useState([]);
   const [darkMode, updateDarkMode] = useState(false);
+  const [countryDetail, showCountryDetail] = useState(null);
 
   // TODO: Look into routing to be able to click on country card?
   // TODO: Show all countries when the page loads
@@ -24,10 +26,14 @@ function App() {
           <span className="darkModeText">Dark Mode</span>
         </div>
       </div>
-      <SearchBar updateCountries={updateCountries} darkMode={darkMode}/>
-      <div>
-        <CountryCards countries={countryInfo} darkMode={darkMode}/>
-      </div>
+      {
+        countryDetail === null 
+        ? <div>
+          <SearchBar updateCountries={updateCountries} darkMode={darkMode}/>
+            <CountryCards countries={countries} darkMode={darkMode} showCountryDetail={showCountryDetail}/>
+          </div>
+        : <CountryDetail countryInfo={countryDetail} darkMode={darkMode} showCountryDetail={showCountryDetail} />
+      }
     </div>
   );
 }

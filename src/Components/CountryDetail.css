@@ -1,0 +1,35 @@
+button {
+    padding: 8px 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.backButton {
+    margin: 48px;
+}
+
+.borderCountryButton {
+    margin: 6px;
+}
+
+.countryDetailSection {
+    display: inline-block;
+    border: red 1px solid;
+    padding: 64px;
+    background-color: transparent !important;
+    width: 40%;
+    min-width: 300px; 
+    vertical-align: top;
+}
+
+.countryDetailSubsection {
+    border: blue 1px solid;
+    width: fit-content;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.countryDetailFlag {
+    width: 100%;
+}

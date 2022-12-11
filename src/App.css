@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+* {
+  transition: color 0.2s, background-color 0.2s;
+}
+
 .parentDiv {
   min-height: 100vh;
   height: max-content;

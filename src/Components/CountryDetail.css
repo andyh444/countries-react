@@ -15,7 +15,6 @@ button {
 
 .countryDetailSection {
     display: inline-block;
-    border: red 1px solid;
     padding: 64px;
     background-color: transparent !important;
     width: 40%;
@@ -24,7 +23,6 @@ button {
 }
 
 .countryDetailSubsection {
-    border: blue 1px solid;
     width: fit-content;
     display: inline-block;
     vertical-align: top;

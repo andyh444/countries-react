@@ -41,7 +41,7 @@ export default function CountryDetail({ countryInfo, darkMode, showCountryDetail
                 <button className={'backButton shadow ' + (darkMode ? "darkElement" : "lightElement")} onClick={() => showCountryDetail(x => null)}>Back</button>
             </div>
             <div className='countryDetailSection'>
-                <img className='countryDetailFlag' src={countryInfo.flags?.png} alt=""></img>
+                <img className='countryDetailFlag' src={countryInfo.flags?.svg} alt=""></img>
             </div>
             <div className={'countryDetailSection '  + (darkMode ? "darkElement" : "lightElement")}>
                 <h3>{countryInfo.name?.common}</h3>
